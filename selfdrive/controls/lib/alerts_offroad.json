@@ -33,10 +33,10 @@
     "text": "Device failed to register. It will not connect to or upload to comma.ai servers, and receives no support from comma.ai. If this is an official device, visit https://comma.ai/support.",
     "severity": 1
   },
-  "Offroad_StorageMissing": {
-    "text": "NVMe drive not mounted.",
-    "severity": 1
-  },
+  #"Offroad_StorageMissing": {
+    #"text": "NVMe drive not mounted.",
+    #"severity": 1
+  #},
   "Offroad_BadNvme": {
     "text": "Unsupported NVMe drive detected. Device may draw significantly more power and overheat due to the unsupported NVMe.",
     "severity": 1
