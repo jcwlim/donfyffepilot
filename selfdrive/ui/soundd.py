@@ -43,6 +43,7 @@ sound_list: dict[int, tuple[str, int | None, float]] = {
   AudibleAlert.warningImmediate: ("warning_immediate.wav", 10, MAX_VOLUME),
   AudibleAlert.warning: ("warning.wav", 1, MAX_VOLUME),
   AudibleAlert.dingdong: ("dingdong.wav", 1, MAX_VOLUME),
+  AudibleAlert.wazealert: ("wazealert.wav", 1, MAX_VOLUME),
 }
 
 def check_controls_timeout_alert(sm):
