@@ -335,7 +335,7 @@ def manager_thread() -> None:
   if os.getenv("NOBOARD") is not None:
     ignore.append("pandad")
   ignore += [x for x in os.getenv("BLOCK", "").split(",") if len(x) > 0]
-  if params.get("DoNotDisturbMode"):
+  if params.get_bool("DoNotDisturbMode"):
     ignore += ["dmonitoringd", "dmonitoringmodeld"]
 
   sm = messaging.SubMaster(['deviceState', 'carParams'], poll='deviceState')
