@@ -97,7 +97,7 @@ procs = [
   PythonProcess("webjoystick", "tools.bodyteleop.web", notcar),
 ]
 
-if NDM:
+if not NDM:
   procs += [
     PythonProcess("dmonitoringmodeld", "selfdrive.modeld.dmonitoringmodeld", driverview, enabled=(not PC or WEBCAM)),
     PythonProcess("dmonitoringd", "selfdrive.monitoring.dmonitoringd", driverview, enabled=(not PC or WEBCAM)),
